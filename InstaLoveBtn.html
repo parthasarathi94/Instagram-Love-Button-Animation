@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Love Button</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alef&family=Merriweather+Sans&family=Noto+Sans&family=Poppins:wght@300&family=Roboto+Mono&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Alef', sans-serif;
+        }
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        #container {
+            height: 400px;
+            width: 350px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+        }
+        #container img {
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #container #mid{
+            color: white;
+            opacity: 0;
+            font-size: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform ease 0.5s;
+        }
+        #container #below{
+            color: white;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="https://plus.unsplash.com/premium_photo-1669850858893-068d0a6bf144?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="">
+        <i class="ri-heart-fill" id="mid"></i>
+        <i class="ri-heart-fill" id="below"></i>
+    </div>
+    <script src="InstaLoveBtn.js"></script>
+</body>
+
+</html>
